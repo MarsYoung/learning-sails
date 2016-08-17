@@ -7,7 +7,7 @@
    when finish ,then Gruntfile.js,api,assets,node_modules,tasks,README.md,app.js,config,package.json,views is put in learning-sails folder.
    in api folder,there are controllers,models,polices,responses,services.
 
-# 2.sails generate controller UserController add delete update find
+# 2.sails generate controller User add delete update find
 info: Created a new controller ("UserController") at api/controllers/UserControllerController.js!
 
 # 3.sudo node app.js
@@ -36,7 +36,15 @@ debug: Port        : 1337
 debug: -------------------------------------------------------
 
 
+# 4.vi config/env/production 
+set port = 8081
+-------let it run--------
+sudo NODE_ENV=production node app.js
+or  
+sudo node app.js --prod
+
+# 5.keep it lifted
+forever start app.js --prod
 
 
-# 4.
 
